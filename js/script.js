@@ -1,13 +1,13 @@
 $ (document).ready(function(){
 
-    $('imput[name=Fahrenheit]').on('input', function () {
+    $('input[name=Fahrenheit]').on('input', function () {
         var fahrenheit = parseFloat($(this).val());
         var kelvin, celsius;
         kelvin = fahrenheitToKelvin(fahrenheit);
         celsius = fahrenheitToCelsius(fahrenheit);
 
-        $('input[name=Kelvin').val(kelvin);
-        $('input[name=Celsius').val(celsius);
+        $('input[name=Kelvin]').val(kelvin);
+        $('input[name=Celsius]').val(celsius);
     });
 
     $('input[name=Kelvin]').on('input', function () {
@@ -17,7 +17,7 @@ $ (document).ready(function(){
         celsius = kelvinToCelsius(kelvin);
 
         $('input[name=Fahrenheit]').val(fahrenheit);
-        $('input[name=Celsius').val(celsius);
+        $('input[name=Celsius]').val(celsius);
     });
 
     $('input[name=Celsius]').on('input', function (){
@@ -26,8 +26,8 @@ $ (document).ready(function(){
         fahrenheit = celsiusToFahrenheit(celsius);
         kelvin = celsiusToKelvin(celsius);
 
-        $('input[name=Fahrenheit').val(fahrenheit);
-        $('input[name=Kelvin').val(kelvin);
+        $('input[name=Fahrenheit]').val(fahrenheit);
+        $('input[name=Kelvin]').val(kelvin);
     });
 });
 
@@ -51,7 +51,7 @@ function kelvinToFahrenheit (temperature) {
 
 function kelvinToCelsius(temperature) {
     var celsius;
-    celsius = temperature - 273,15;
+    celsius = temperature - 273.15;
     return celsius;
 }
 
