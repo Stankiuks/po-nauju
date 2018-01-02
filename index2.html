@@ -8,29 +8,46 @@
 </head>
 <body>
 <h1 class="text-center mb-4">Automobiliai</h1>
-<table class="table">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-3">
+        <div class="form-group">
+            <input class="form-control" type="text" id="AutomobilioNr" name="AutomobilioNr" placeholder="Automobilio nr">
+        </div>
+    </div>
+    <div class="col-md-4 mt-3">
+        <div class="form-group">
+            <input class="form-control" type="text" id="NuvaziuotasKelias" name="NuvaziuotasKelias" placeholder="Nuvaziuotas kelias">
+        </div>
+    </div>
+    <div class="col-md-4 mt-3">
+        <div class="form-group">
+            <input class="form-control" type="text" id="Laikas" name="Laikas" placeholder="Laikas">
+        </div>
+    </div>
+    </div>
+</div>
+<button type="button" class="btn btn-light mt-2">Saugoti</button>
+<table class="table mt-5">
     <thead>
     <tr>
         <th>Auto numeris</th>
-        <th>Nuvaziuotas kelias</th>
-        <th>Laikas</th>
+        <th>Kelias (m)</th>
+        <th>Laikas (s)</th>
+        <th>Greitis (km/h)</th>
     </tr>
     </thead>
     <tbody>
 
-
     </tbody>
 </table>
-<button type="button" class="btn btn-light mt-5">Saugoti</button>
 
-    <div class="row">
-        <div class="col-md-4 mt-3">
-            <div class="form-group">
-                <input class="form-control" type="text" id="filter" name="Filtras" placeholder="Filtras">
-            </div>
-            <button type="button" class="btn btn-light mt-5">Filtruoti</button>
-</div>
+<div class="col-md-4 mt-5">
+    <div class="form-group">
+        <input class="form-control" type="text" id="filter" name="Filtras" placeholder="Filtras">
     </div>
+        <button type="button" class="btn btn-light mt-1">Filtruoti</button>
+</div>
 
 
 <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript"></script>
