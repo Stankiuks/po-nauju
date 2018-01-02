@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <title>Temperaturos</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
-    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
 </head>
 <body>
+<div class="container">
+    <h1 class="text-center mb-4">Temperaturos skaiciavimas</h1>
+    <div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Kelvin">Kelvinai</label>
+            <input class="form-control" type="text" id="Kelvin" name="Kelvin" placeholder="Iveskite temperatura kelvinais">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Fahrenheit">Farenheitai</label>
+            <input class="form-control" type="text" id="Fahrenheit" name="Fahrenheit" placeholder="Iveskite temperatura farenheitais">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Celsius">Celsijai</label>
+            <input class="form-control" type="text" id="Celsius" name="Celsius" placeholder="Iveskite temperatura celsijais">
+        </div>
+    </div>
+    </div>
+</div>
 
-
-
+<script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
