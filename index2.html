@@ -10,25 +10,24 @@
 <h1 class="text-center mb-4">Automobiliai</h1>
 <div class="container">
     <div class="row">
-        <div class="col-md-4 mt-3">
+        <div class="col-md-3 mt-3">
         <div class="form-group">
             <input class="form-control" type="text" id="AutomobilioNr" name="AutomobilioNr" placeholder="Automobilio nr">
         </div>
     </div>
-    <div class="col-md-4 mt-3">
+    <div class="col-md-3 mt-3">
         <div class="form-group">
             <input class="form-control" type="text" id="NuvaziuotasKelias" name="NuvaziuotasKelias" placeholder="Nuvaziuotas kelias">
         </div>
     </div>
-    <div class="col-md-4 mt-3">
+    <div class="col-md-3 mt-3">
         <div class="form-group">
             <input class="form-control" type="text" id="Laikas" name="Laikas" placeholder="Laikas">
         </div>
     </div>
+    <button type="button" id="save" class="btn btn-light mt-1 ml-5">Saugoti</button>
     </div>
-</div>
-
-<table class="table mt-5">
+<table class="table mt-5" id="table">
     <thead>
     <tr>
         <th>Auto numeris</th>
@@ -41,14 +40,13 @@
 
     </tbody>
 </table>
-
 <div class="col-md-4 mt-5">
     <div class="form-group">
         <input class="form-control" type="text" id="filter" name="Filtras" placeholder="Filtras">
     </div>
         <button type="button" class="btn btn-light mt-1">Filtruoti</button>
 </div>
-
+</div>
 
 <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript"></script>
 <script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
